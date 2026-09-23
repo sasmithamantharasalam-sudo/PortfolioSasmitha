@@ -541,7 +541,7 @@
                 SM
             </div>
 
-            <h1>Hello, I'm <span>Your Name</span></h1>
+            <h1>Hello, I'm <span>Sasmitha M</span></h1>
 
             <h3>Computer Science Engineering Student</h3>
 
@@ -676,7 +676,7 @@
 
                 <div class="skill-header">
                     <span>HTML & CSS</span>
-                    <span>85%</span>
+                    <span>50%</span>
                 </div>
 
                 <div class="progress">
@@ -690,7 +690,7 @@
 
                 <div class="skill-header">
                     <span>JavaScript</span>
-                    <span>70%</span>
+                    <span>25%</span>
                 </div>
 
                 <div class="progress">
@@ -746,57 +746,11 @@
         <div class="projects-container">
 
 
-            <!-- PROJECT 1 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-                    🎯
-                </div>
-
-                <div class="project-content">
-
-                    <h3>Target Score App</h3>
-
-                    <p>
-                        A simple application designed to calculate and
-                        track target scores with an easy-to-use interface.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
+            
 
 
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-                    ❌⭕
-                </div>
-
-                <div class="project-content">
-
-                    <h3>Tic Tac Toe</h3>
-
-                    <p>
-                        An interactive Tic Tac Toe game developed using
-                        HTML, CSS and JavaScript.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
+            
+            
 
             <!-- PROJECT 3 -->
 
@@ -823,22 +777,22 @@
 
             </div>
 
-
-            <!-- PROJECT 4 -->
+  <!-- PROJECT 5 -->
 
             <div class="project-card">
 
                 <div class="project-image">
-                    📊
+                    🧮
                 </div>
 
                 <div class="project-content">
 
-                    <h3>Mall Customer Segmentation</h3>
+                    <h3>CGPA Calculator</h3>
 
                     <p>
-                        A data science project that analyzes customer
-                        characteristics and groups customers into segments.
+                        A C programming project that calculates semester
+                        SGPA and overall CGPA using subject credits and
+                        grade points.
                     </p>
 
                     <a href="#" class="project-link">
@@ -850,9 +804,253 @@
             </div>
 
 
-            <!-- PROJECT 5 -->
+            <!-- =========================
+         EDUCATION SECTION
+    ========================== -->
 
-            <div class="project-card">
+    <section id="education">
 
-                <div class="project-image">
+        <div class="section-title">
+            <h2>Education</h2>
+            <p>My academic journey</p>
+        </div>
+
+        <div class="education-container">
+
+            <div class="education-card">
+
+                <span>2025 - Present</span>
+
+                <h3>B.E. Computer Science and Engineering</h3>
+
+                <p>
+                    Government College of Technology / Your College Name
+                </p>
+
+                <p>
+                    Currently pursuing my undergraduate degree and
+                    developing technical skills in programming,
+                    data structures and software development.
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <span>Higher Secondary Education</span>
+
+                <h3>Higher Secondary School</h3>
+
+                <p>
+                    Completed higher secondary education with an interest
+                    in mathematics, science and computer-related subjects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section id="contact">
+
+        <div class="section-title">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Feel free to get in touch with me
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+
+            <div class="contact-details">
+
+                <p>📧 sasmithamantharasalam@gmail.com</p>
+
+                <p>📍 Coimbatore, Tamil Nadu, India</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> Your Name.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        /* =========================
+           MOBILE MENU
+        ========================== */
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", function () {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+
+        /* Close menu after clicking a link */
+
+        document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                navLinks.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* =========================
+           DARK MODE
+        ========================== */
+
+        const themeBtn = document.getElementById("themeBtn");
+
+        themeBtn.addEventListener("click", function() {
+
+            document.body.classList.toggle("dark");
+
+            if (document.body.classList.contains("dark")) {
+
+                themeBtn.textContent = "☀️";
+
+            } else {
+
+                themeBtn.textContent = "🌙";
+
+            }
+
+        });
+
+
+        /* =========================
+           SKILL BAR ANIMATION
+        ========================== */
+
+        const progressBars =
+            document.querySelectorAll(".progress-bar");
+
+        function animateSkills() {
+
+            progressBars.forEach(function(bar) {
+
+                const position =
+                    bar.getBoundingClientRect().top;
+
+                const screenHeight =
+                    window.innerHeight;
+
+                if (position < screenHeight - 50) {
+
+                    bar.style.width =
+                        bar.getAttribute("data-width");
+
+                }
+
+            });
+
+        }
+
+        window.addEventListener("scroll", animateSkills);
+
+        animateSkills();
+
+
+        /* =========================
+           CONTACT FORM
+        ========================== */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("name").value;
+
+            alert(
+                "Thank you, " + name +
+                "! Your message has been received."
+            );
+
+            contactForm.reset();
+
+        });
+
+
+        /* =========================
+           CURRENT YEAR
+        ========================== */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+        </html>
             
